@@ -1,0 +1,20 @@
+meta {
+  name: Search With Invalid Data
+  type: http
+  seq: 5
+}
+
+post {
+  url: {{baseUrl}}/api/search
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "berryId": -1,
+    "minPrice": -100,
+    "maxPrice": 50,
+    "type": "INVALID_TYPE"
+  }
+}

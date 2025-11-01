@@ -1,0 +1,19 @@
+meta {
+  name: Search By Price Range
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{baseUrl}}/api/search
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "minPrice": 200,
+    "maxPrice": 300,
+    "type": "SELL"
+  }
+}

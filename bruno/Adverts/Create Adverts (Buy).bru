@@ -1,0 +1,26 @@
+meta {
+  name: Create Adverts (Buy)
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{baseUrl}}/api/adverts
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{authToken}}
+}
+
+body:json {
+  {
+    "berryId": 12,
+    "quantity": 50.0,
+    "price": 300.00,
+    "address": "Санкт-Петербург",
+    "description": "Закупаем клюкву оптом",
+    "type": "BUY"
+  }
+}

@@ -1,0 +1,20 @@
+meta {
+  name: Search Combined Filters
+  type: http
+  seq: 4
+}
+
+post {
+  url: {{baseUrl}}/api/search
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "berryGroupId": 1,
+    "minPrice": 200,
+    "maxPrice": 400,
+    "advertType": "SELL"
+  }
+}

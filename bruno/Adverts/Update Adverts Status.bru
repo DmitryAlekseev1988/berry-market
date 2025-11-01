@@ -1,0 +1,15 @@
+meta {
+  name: Update Adverts Status
+  type: http
+  seq: 6
+}
+
+patch {
+  url: {{baseUrl}}/api/adverts/1/status?status=CLOSED
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{authToken}}
+}

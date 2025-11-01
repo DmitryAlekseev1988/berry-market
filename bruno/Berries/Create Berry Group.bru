@@ -1,0 +1,22 @@
+meta {
+  name: Create Berry Group
+  type: http
+  seq: 4
+}
+
+post {
+  url: {{baseUrl}}/api/berries/groups
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{authToken}}
+}
+
+body:json {
+  {
+    "name": "Лесные ягоды",
+    "description": "Ягоды, растущие в лесу"
+  }
+}

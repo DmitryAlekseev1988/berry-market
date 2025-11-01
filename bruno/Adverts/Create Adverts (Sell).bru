@@ -1,0 +1,26 @@
+meta {
+  name: Create Adverts (Sell)
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{baseUrl}}/api/adverts
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{authToken}}
+}
+
+body:json {
+  {
+    "berryId": 2,
+    "quantity": 10.5,
+    "price": 250.00,
+    "address": "Москва, Лесопарк Сокольники",
+    "description": "Свежая черника",
+    "type": "SELL"
+  }
+}

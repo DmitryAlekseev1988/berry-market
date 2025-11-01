@@ -1,0 +1,15 @@
+meta {
+  name: Delete Adverts
+  type: http
+  seq: 7
+}
+
+delete {
+  url: {{baseUrl}}/api/adverts/1
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{authToken}}
+}

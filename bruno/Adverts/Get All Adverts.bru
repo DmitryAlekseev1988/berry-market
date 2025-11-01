@@ -1,0 +1,22 @@
+meta {
+  name: Get All Adverts
+  type: http
+  seq: 7
+}
+
+post {
+  url: {{baseUrl}}/api/adverts/all
+  body: json
+  auth: bearer
+}
+
+body: json {
+  {
+    "page": 0,
+    "size": 20
+  }
+}
+
+auth:bearer {
+  token: {{authToken}}
+}

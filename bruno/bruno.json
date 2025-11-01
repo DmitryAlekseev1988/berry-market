@@ -1,0 +1,9 @@
+{
+  "version": "1",
+  "name": "Berry Market API",
+  "type": "collection",
+  "ignore": [
+    "node_modules",
+    ".git"
+  ]
+}

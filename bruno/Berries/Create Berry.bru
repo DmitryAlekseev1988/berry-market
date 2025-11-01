@@ -1,0 +1,22 @@
+meta {
+  name: Create Berry
+  type: http
+  seq: 5
+}
+
+post {
+  url: {{baseUrl}}/api/berries
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{authToken}}
+}
+
+body:json {
+  {
+    "name": "Брусника",
+    "groupId": 1
+  }
+}

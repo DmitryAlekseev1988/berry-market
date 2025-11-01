@@ -1,0 +1,15 @@
+meta {
+  name: Get Adverts By ID
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{baseUrl}}/api/adverts/1
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{authToken}}
+}
